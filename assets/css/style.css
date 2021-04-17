@@ -1,0 +1,172 @@
+body{
+    background-color: #FDFFF5;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/*----------------------------------------------------------*/
+header{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 178px;
+    background-color: springgreen;
+    display: grid;
+    grid-template-columns: 10px 2fr 1fr 2fr 10px;
+    grid-template-rows: 10px 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+    justify-content: space-between;
+}
+#leftTop{
+    grid-area: 2/2;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20px 2px 1fr;
+    grid-template-rows: 1fr;
+    justify-content: space-around;
+    align-items: baseline;
+}
+#adressIcon{
+    grid-area: 1/1;
+}
+#adress{
+    grid-area: 1/3;
+}
+#rightTop{
+    grid-area: 2/4;
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr 2px 35px 2px 60px;
+    grid-template-rows: 1fr;
+    justify-content: space-around;
+    align-items: baseline;
+}
+#connection{
+    grid-area: 1/1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#basket{
+    grid-area:1/4;
+}
+#langChoice{
+    grid-area: 1/6;
+    display: flex;
+    flex-direction: row;
+}
+#socials{
+    grid-area:4/1;
+    width: 35%;
+    display: grid;
+    grid-template-columns: 10px 1fr 10px 1fr 10px 1fr;
+    grid-template-rows: 1fr;
+    align-items: baseline;
+}
+#facebook{
+    grid-area: 1/2;
+}
+#insta{
+    grid-area: 1/4;
+}
+#twitter{
+    grid-area: 1/6;
+}
+#logo{
+    grid-area: 5/3/7/3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    font-family: 'MuseoModerno', cursive;
+    font-weight: 300;
+    font-size: 68px;
+    text-align: center;
+}
+#navIcon{
+    display: none;
+}
+
+@media screen AND (max-width:750px) {
+    #adressIcon , #adress , #connection , #langChoice , #socials{
+        display: none;
+    }
+    header{
+        grid-template-columns: 15px 35px 5px 2fr 5px 35px 15px;
+        grid-template-rows: 20px 20px 15px 1fr 15px;
+        justify-content: space-between;
+    }
+    #navIcon{
+        display: block;
+        color: #3C1518;
+        font-size: 32px;
+    }
+    #basket{
+        font-size: 32px;
+    }
+    #leftTop{
+        grid-area: 2/2;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    #rightTop{
+        grid-area: 2/6;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    #logo{
+        grid-area: 3 / 3 / 5 /5;
+    }
+}
+
+/*----------------------------------------------------------*/
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: salmon;
+}
+
+
+/*----------------------------------------------------------*/
+main{
+    width: 100%;
+    height: auto;
+    background-color: royalblue;
+}
+h2{
+    font-family: 'Roboto Slab', serif;
+}
+
+/*----------------------------------------------------------*/
+footer{
+    width: 100%;
+    height: 340px;
+    background-color: red;
+}
+
+/*----------------------------------------------------------*/
+.lightColor{
+    color: #DCC48E;
+}
+.orangeColor{
+    color: #DD6E42;
+}
+.brownColor{
+    color: #3C1518;
+}
+.separate{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+a{
+    text-decoration: none;
+}
+img{display: none;}
