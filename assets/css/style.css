@@ -2,18 +2,15 @@ body{
     background-color: #FDFFF5;
     width: 100%;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     margin: 0;
     padding: 0;
 }
 
 /*----------------------------------------------------------*/
 header{
-    position: relative;
-    z-index: 1;
     width: 100%;
     height: 178px;
-    background-color: springgreen;
     display: grid;
     grid-template-columns: 10px 2fr 1fr 2fr 10px;
     grid-template-rows: 10px 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
@@ -91,6 +88,33 @@ h1{
     display: none;
 }
 
+/*----------------------------------------------------------*/
+#navigation{
+    list-style-type: none;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top: solid 1px #DCC48E;
+    border-bottom: solid 1px #DCC48E;
+}
+li{
+    width: 20%;
+
+    text-align: center;
+}
+li:not(:first-child){
+    border-left: #DD6E42 solid 1px;
+}
+#accueil{
+    font-style: italic;
+    font-weight: 700;
+}
+
 @media screen AND (max-width:750px) {
     #adressIcon , #adress , #connection , #langChoice , #socials{
         display: none;
@@ -125,15 +149,10 @@ h1{
     #logo{
         grid-area: 3 / 3 / 5 /5;
     }
+    #navigation{
+        display: none;
+    }
 }
-
-/*----------------------------------------------------------*/
-nav{
-    width: 100%;
-    height: 60px;
-    background-color: salmon;
-}
-
 
 /*----------------------------------------------------------*/
 main{
@@ -153,6 +172,9 @@ footer{
 }
 
 /*----------------------------------------------------------*/
+.textItalique{
+    font-style: italic;
+}
 .lightColor{
     color: #DCC48E;
 }
@@ -170,3 +192,11 @@ a{
     text-decoration: none;
 }
 img{display: none;}
+
+#adress:hover , #logIn:hover , #signUp:hover , #langEn:hover , #langFr:hover , #catalogue:hover , #creations:hover , #coffrets:hover , #contact:hover{
+    font-style: italic;
+    font-weight: 700;
+}    
+#basket:hover , #facebook:hover , #insta:hover , #twitter:hover{
+    font-size: 18px;
+}
