@@ -1,9 +1,9 @@
 body{
-    background-color: #FDFFF5;
+    background-color: #faf5d7;
     width: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    margin: 0;
+    margin:0;
     padding: 0;
 }
 
@@ -113,63 +113,252 @@ nav li:not(:first-child){
     font-weight: 700;
 }
 
-@media screen AND (max-width:750px) {
-    #adressIcon , #adress , #connection , #langChoice , #socials{
-        display: none;
-    }
-    header{
-        grid-template-columns: 15px 35px 5px 2fr 5px 35px 15px;
-        grid-template-rows: 20px 20px 15px 1fr 15px;
-        justify-content: space-between;
-    }
-    #navIcon{
-        display: block;
-        color: #3C1518;
-        font-size: 32px;
-    }
-    #basket{
-        font-size: 32px;
-    }
-    #leftTop{
-        grid-area: 2/2;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    #rightTop{
-        grid-area: 2/6;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: center;
-    }
-    #logo{
-        grid-area: 3 / 3 / 5 /5;
-    }
-    #navigation{
-        display: none;
-    }
-}
+
 
 /*----------------------------------------------------------*/
 main{
     width: 100%;
-    height: auto;
-    background-color: royalblue;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px 480px 80px 2.5fr 40px 1fr 40px 1fr 40px 0.5fr 40px 1fr;
 }
+section{
+    padding: 40px;
+}
+.whiteBg{   
+    background-color: white;
+}
+
 h2{
     font-family: 'Roboto Slab', serif;
+    font-size: 64px;
+}
+#presentation{
+    border: solid 1px red;
+    grid-area: 2/1;
+    background-image: url(../image/bannièreTop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    height: 100%;
+    transform: scaleX(-1);
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr 60px;
+    grid-template-rows: 40px 1fr 40px;
+}
+#textPresentation{
+    grid-area: 2/3;
+    transform: scaleX(-1);
+    text-align: left;
+}
+#collections{
+    grid-area: 4/1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2% 47% 2% 47% 2%;
+    justify-content: center;
+    align-items: center;
+}
+#collectionOne{
+    grid-area: 2/1;
+    display: flex;
+    align-items: center;
+}
+.textLeft{
+    padding-bottom: 60px;
+    height: 400px;
+    width: 50%;
+    margin-left: 50px;
+}
+#collectionTwo{
+    grid-area: 4/1;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.textRight{
+    padding-bottom: 60px;
+    height: 400px;
+    width: 50%;
+    margin-right: 40px;
+}
+.absolu{
+    position: absolute;
+}
+.right{
+    right: 30px;
+}
+.left{
+    left: 30px;
+}
+.consultLeft{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.buttonProductLeft{
+    margin:20px auto 20px 5px;
+    width: 215px;
+    height: 50px;
+    border-radius: 30px;
+    border:solid 1px #DD6E42;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+.consultRight{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.buttonProductRight{
+    margin:20px 5px 20px auto;
+    width: 215px;
+    height: 50px;
+    border-radius: 30px;
+    border:solid 1px #DD6E42;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+#artisan{
+    grid-area: 6/1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px 1fr 20px;
+    align-items: center;
+}
+#femmeDebout{
+    grid-area: 2/1;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center; 
+}
+#femmeDebout .textRight{
+    padding-bottom: 130px;
+}
+#comments{
+    grid-area: 8/1;
+}
+#avis{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#commentZone{
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    grid-template-rows: 250px;
+}
+#pic{
+    grid-area: 1/1;
+}
+.profilePic{
+    width: 80px;
+    height: 80px;
+    object-fit:cover;
+    border-radius: 80px;
+}
+#textComment{
+    padding: 40px;
+    grid-area: 1/2;
+    border-radius: 30px;
+}
+#prenomDate{
+    text-align:right;
+}
+#thanks{
+    grid-area: 10/1;
+    background-image: url(../image/bannièreBot.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#newsletter{
+    grid-area: 12/1;
+}
+#inscriptionNewsletter{
+    display: grid;
+    padding: 40px;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 1fr;
+    align-items:baseline;
+}
+#infoNewsletter{
+    grid-area: 1/1;
+    padding: 40px;
+}
+#formNewsletter{
+    grid-area: 1/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 10px 30px 10px 30px;
+}
+#formEmail{
+    grid-area: 1/1;
+}
+#emailPlaceholder{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    width: 97%;
+    padding-left: 10px;
+    height: 30px;
+    border: none;
+}
+#formCheckbox{
+    grid-area: 3/1;
+}
+#formSubmit{
+    grid-area: 5/1;
+}
+#submitButton{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #FDFFF5;
+    background-color: #DD6E42;
+    width: 100%;
+    height: 40px;
+    border: none;
+    text-align: center;
+}
+
+section img{
+    width: 600px;
+    height: 600px;
+    border-radius: 50px;
+    margin:40px;
 }
 
 /*----------------------------------------------------------*/
+#up{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    grid-template-rows: 1fr;
+
+}
+#upItem{
+    grid-area: 1/2;
+    text-align: center;
+}
 footer{
     width: 100%;
     height: 320px;
+    padding-top: 20px;
     display: grid;
     grid-template-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
     grid-template-rows: 1fr;
     align-items:top;
+    border-top: solid 1px #DCC48E;
 }
 #footerLeft{
     grid-area: 1/1;
@@ -207,10 +396,12 @@ footer li{
     flex-direction: column;
 }
 
-
 /*----------------------------------------------------------*/
 .textItalique{
     font-style: italic;
+}
+.whiteColor{
+    color: #FDFFF5;
 }
 .lightColor{
     color: #DCC48E;
@@ -240,11 +431,111 @@ ul{
     margin: 0;
     padding: 0;
 }
-
 h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+h4{
     font-family: 'Roboto Slab', serif;
     font-size: 14px;
     color: #DCC48E;
 }
+.fa-angle-double-down , .fa-angle-double-up{
+    font-size: 24px;
+    padding: 40px;
+}
+.saut{
+    display: block;
+}
+.shadow{
+    box-shadow: -6px 10px 6px rgba(0, 0, 0, 0.150);
+}
 
-img{display: none;}
+@media screen AND (max-width:750px) {
+    #adressIcon , #adress , #connection , #langChoice , #socials{
+        display: none;
+    }
+    header{
+        grid-template-columns: 15px 35px 5px 2fr 5px 35px 15px;
+        grid-template-rows: 20px 20px 15px 1fr 15px;
+        justify-content: space-between;
+    }
+    #navIcon{
+        display: block;
+        color: #3C1518;
+        font-size: 32px;
+    }
+    #basket{
+        font-size: 32px;
+    }
+    #leftTop{
+        grid-area: 2/2;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    #rightTop{
+        grid-area: 2/6;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    #logo{
+        grid-area: 3 / 3 / 5 /5;
+    }
+    #navigation{
+        display: none;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    footer:not(#footerLeft){
+        width: 95%;
+        padding-left: 20px;
+    }
+    main , #presentation{
+        display: flex;
+        flex-direction: column;
+    }
+    section{
+        padding:0;
+    }
+    #presentation{
+        background-image: url(../image/bannièreTopMobile.jpg);
+        padding: 40px;
+    }
+    #collectionOne , #collectionTwo{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    section img{
+        width: 300px;
+        height: 300px;
+        border-radius: 25px;
+    }
+    .profilePic{
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+    }
+    .absolu{
+        position: relative;
+    }
+    .right{
+        right: 0px;
+    }
+    #artisan img{
+        display: none;
+    }
+    #artisan{
+        background-image: url(../image/ARTISANSmobile.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+    }
+}
