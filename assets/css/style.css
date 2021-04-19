@@ -173,6 +173,9 @@ h2{
     justify-content: center;
     align-items: center;
 }
+#collectionsCopy{
+    display: none;
+}
 #collectionOne{
     grid-area: 2/1;
     display: flex;
@@ -509,7 +512,6 @@ h4{
     #navigation{
         display: none;
     }
-
     footer{
         display: flex;
         flex-direction: column;
@@ -524,15 +526,60 @@ h4{
     }
     section{
         padding:0;
+        margin: 0;
     }
     #presentation{
-        background-image: url(../image/bannièreTopMobile.jpg);
+        background-image: url(../image/bannièreTop.jpg);
         padding: 40px;
     }
-    #collectionOne , #collectionTwo{
-        display: flex;
-        flex-direction: column-reverse;
+    #collections{
+        display: none;
     }
+    #collectionsCopy{
+        margin-top: 20px;
+        grid-area: 4/1;
+        display: block;
+    }
+    #collectionOneCopy{
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #collectionTwoCopy{
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #artisan{
+        padding: 0;
+        height: 1080px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../image/ARTISANSmobile.jpg);
+        background-size: cover;
+    }
+    #artisan img{
+        display: none;
+    }
+    .whiteBg{
+        background-color: rgba(255, 255, 255, 0);
+    }
+    #femmeDebout{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
     section img{
         width: 300px;
         height: 300px;
@@ -547,15 +594,7 @@ h4{
         position: relative;
     }
     .right{
-        right: 0px;
+        right: none;
     }
-    #artisan img{
-        display: none;
-    }
-    #artisan{
-        background-image: url(../image/ARTISANSmobile.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-    }
+
 }
