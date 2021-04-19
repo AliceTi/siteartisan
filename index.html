@@ -54,11 +54,13 @@
 
         <div id="logo" class="brownColor">
         <h1>YADGÉ</h1>
-        <!--<iframe width="1198" height="674" src="https://www.youtube.com/embed/9Ziga1J-xeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-        <audio></audio>
-        <!--mettre l'attribut control / mettre un display none / icone av un speaker (cliquer pour mute)--> 
-        </div> 
     </header>
+
+   <div id="video">
+        <video id="videoHeader"controls="hidden" autoplay="true" loop muted poster="assets/image/thumbnail.png">
+            <source src="assets/video/VIDEOSUJETPROYADGE.mp4" type="video/mp4"/>
+        </video>
+    </div>-
 
     <nav>    
         <ul id="navigation">
@@ -149,38 +151,34 @@
         </section>
 
         <section id="thanks">
-            <h2 class="whiteColor">Merci pour votre confiance</h2>   
-                <!-- intégration au CSS de la bannière [faire une div flexbox (16:9 en cover)1920x700 pour banniere format
-                    sur fond sombre / et unie -> texte couleur blanc] contenant le texte et le titre " merci de votre confiance"-->
+            <h2 class="whiteColor">Merci pour votre confiance</h2>
         </section>
 
         <section id="newsletter">
             <h2 class="lightColor">Notre programme de fidélité et notre newsletter</h2>   
-            <!-- intégration au CSS de la bannière [faire une div flexbox (16:9 en cover)1920x700 pour banniere format
-                sur fond sombre / et unie -> texte couleur blanc] contenant le texte et le titre " merci de votre confiance"-->
             <div id="inscriptionNewsletter">   
                 <div id="infoNewsletter">
                     <p class="brownColor">Obtenez l'accès VIP aux nouveautés, à des remises exclusives et des petits cadeaux en vous inscrivant à notre programme de fidélité !</p>
                 </div>
                 <div id="formNewsletter">
-                        <div id="formEmail">
-                            <form>
-                            <label>
-                                <input type="text" placeholder="Email" id="emailPlaceholder">
-                            </label>
-                            </form>
+                    <div id="formEmail">
+                        <form>
+                        <label>
+                            <input type="text" placeholder="Email" id="emailPlaceholder">
+                        </label>
+                        </form>
+                    </div>
+                    <div id="formCheckbox">
+                        <label class="brownColor">
+                            <input type="checkbox">Je souhaite recevoir des e-mails de YADGÉ</label>
                         </div>
-                        <div id="formCheckbox">
-                            <label class="brownColor">
-                                <input type="checkbox">Je souhaite recevoir des e-mails de YADGÉ</label>
-                            </div>
-                        <div id="formSubmit">
-                            <label>
-                                <input type="submit"  id="submitButton" value="s'inscrire">
-                            </label>
-                        </div>
-            </div>
-        </div> 
+                    <div id="formSubmit">
+                        <form>
+                            <input type="submit" id="submitButton" value="s'inscrire">
+                        </form>
+                    </div>
+                </div>
+        </div>
         </section>
     </main>
 
@@ -211,7 +209,7 @@
 
         <div id="footerHoraires">
             <ul id="listeHoraires">
-                <li><h4>Nos Horaires</h4></li>
+                <li><h4 class="lightColor">Nos Horaires</h4></li>
                 <li class="lightColor"><i class="fas fa-check-circle lightColor"></i>Lundi 9H - 20H</li>
                 <li class="lightColor"><i class="fas fa-check-circle lightColor"></i>Mardi 9H - 20H</li>
                 <li class="lightColor"><i class="far fa-times-circle lightColor"></i>Mercredi</li>
@@ -224,7 +222,7 @@
 
         <div id="footerContact">
             <ul id="infosContact">
-                <li><h4>INFOS CONTACT</h4></li>
+                <li><h4 class="lightColor">INFOS CONTACT</h4></li>
                 <li id="name"class="lightColor">Frérérique NOËLLE</li>
                 <li><a href="#" id="phone"class="lightColor">02 11 82 18 00</a></li>
                 <li><a href="#" id="mail"class="lightColor">frederique.noelle@yadge.com</a></li>

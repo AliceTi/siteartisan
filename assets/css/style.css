@@ -87,6 +87,17 @@ h1{
 #navIcon{
     display: none;
 }
+#video{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+#videoHeader{
+    width: 90%;
+    object-fit: cover;
+    height: 420px;
+}
 
 /*----------------------------------------------------------*/
 #navigation{
@@ -100,6 +111,7 @@ h1{
     align-items: center;
     border-top: solid 1px #DCC48E;
     border-bottom: solid 1px #DCC48E;
+    font-size: 20px;
 }
 nav li{
     width: 20%;
@@ -120,7 +132,7 @@ main{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20px 480px 80px 2.5fr 40px 1fr 40px 1fr 40px 0.5fr 40px 1fr;
+    grid-template-rows: 20px 480px 80px 2.5fr 40px 1fr 40px 1fr 40px 0.5fr 40px 0.5fr;
 }
 section{
     padding: 40px;
@@ -134,7 +146,6 @@ h2{
     font-size: 64px;
 }
 #presentation{
-    border: solid 1px red;
     grid-area: 2/1;
     background-image: url(../image/bannièreTop.jpg);
     background-repeat: no-repeat;
@@ -288,17 +299,15 @@ h2{
 }
 #inscriptionNewsletter{
     display: grid;
-    padding: 40px;
-    grid-template-columns: 33% 34% 33%;
+    grid-template-columns: 40px 40% 80px 50% 40px;
     grid-template-rows: 1fr;
-    align-items:baseline;
 }
 #infoNewsletter{
-    grid-area: 1/1;
+    grid-area: 1/2;
     padding: 40px;
 }
 #formNewsletter{
-    grid-area: 1/3;
+    grid-area: 1/4;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 30px 10px 30px 10px 30px;
@@ -309,7 +318,7 @@ h2{
 #emailPlaceholder{
     font-family: 'Roboto', sans-serif;
     font-style: italic;
-    width: 97%;
+    width: 75%;
     padding-left: 10px;
     height: 30px;
     border: none;
@@ -325,10 +334,14 @@ h2{
     font-weight: 700;
     color: #FDFFF5;
     background-color: #DD6E42;
-    width: 100%;
+    width: 75%;
     height: 40px;
     border: none;
     text-align: center;
+}
+#submitButton:hover{
+    background-color: #883311;
+    cursor: pointer;
 }
 
 section img{
@@ -337,7 +350,8 @@ section img{
     border-radius: 50px;
     margin:40px;
 }
-
+#comments h2{padding-left: 40px;}
+#newsletter h2{padding-left: 40px;}
 /*----------------------------------------------------------*/
 #up{
     width: 100%;
@@ -404,7 +418,7 @@ footer li{
     color: #FDFFF5;
 }
 .lightColor{
-    color: #DCC48E;
+    color: #bb953b;
 }
 .orangeColor{
     color: #DD6E42;
